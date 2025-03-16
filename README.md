@@ -1,6 +1,6 @@
-[![Godoc Reference](https://godoc.org/github.com/minio/sio?status.svg)](https://godoc.org/github.com/minio/sio)
-[![Travis CI](https://travis-ci.org/minio/sio.svg?branch=master)](https://travis-ci.org/minio/sio)
-[![Go Report Card](https://goreportcard.com/badge/minio/sio)](https://goreportcard.com/report/minio/sio)
+[![Godoc Reference](https://godoc.org/github.com/swift-s3/sio?status.svg)](https://godoc.org/github.com/swift-s3/sio)
+[![Travis CI](https://travis-ci.org/swift-s3/sio.svg?branch=master)](https://travis-ci.org/swift-s3/sio)
+[![Go Report Card](https://goreportcard.com/badge/swift-s3/sio)](https://goreportcard.com/report/swift-s3/sio)
 
 # Secure IO
 ## Go implementation of the Data At Rest Encryption (DARE) format.
@@ -35,8 +35,8 @@ because every chunk is encrypted separately. Therefore the order of the chunks m
 encoded somehow into the chunks itself to be able to detect rearranging any number of 
 chunks.     
 
-This project specifies a [format](https://github.com/minio/sio/blob/master/DARE.md) for 
-en/decrypting an arbitrary data stream and gives some [recommendations](https://github.com/minio/sio/blob/master/DARE.md#appendices)
+This project specifies a [format](https://github.com/swift-s3/sio/blob/master/DARE.md) for 
+en/decrypting an arbitrary data stream and gives some [recommendations](https://github.com/swift-s3/sio/blob/master/DARE.md#appendices)
 about how to use and implement data at rest encryption (DARE). Additionally this project
 provides a reference implementation in Go.  
 
@@ -52,14 +52,14 @@ Its main properties are:
  - Support for long data streams - up to 256 TB under the same key  
  - Random access - arbitrary sequences / ranges can be decrypted independently
 
-**Install:** `go get -u github.com/minio/sio`
+**Install:** `go get -u github.com/swift-s3/sio`
 
-DARE and `github.com/minio/sio` are finalized and can be used in production.
+DARE and `github.com/swift-s3/sio` are finalized and can be used in production.
 
 We also provide a CLI tool to en/decrypt arbitrary data streams directly from
 your command line:
 
-**Install ncrypt:** `go get -u github.com/minio/sio/cmd/ncrypt && ncrypt -h`
+**Install ncrypt:** `go get -u github.com/swift-s3/sio/cmd/ncrypt && ncrypt -h`
 
 ## Performance
 
